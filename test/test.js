@@ -38,7 +38,7 @@ describe('jQuery', function () {
       success: res => {
         should.exits(res);
         done();
-      }
+      },
       error: err => {
         console.log(err)
       }

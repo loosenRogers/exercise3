@@ -31,6 +31,11 @@ module.exports = function(config) {
     preprocessors: {
     },
 
+    plugins: [
+      'karma-mocha',
+      'karma-chrome-launcher',
+      'karma-firefox-launcher'
+    ],
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
@@ -71,7 +76,7 @@ module.exports = function(config) {
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
     // singleRun: false,
-    singleRun: process.env.TRAVIS,
+    // singleRun: process.env.TRAVIS,
 
     // Concurrency level
     // how many browser should be started simultaneous
